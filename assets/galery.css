@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+@media screen and (min-width:49em) {
+    div.container-fluid {
+        padding: 0;
+    }
+    
+    main {
+        width: 70rem;
+        height: 37.46rem;
+    }
+    
+    .carousel-item img {
+        width: 70rem;
+        height: 37.46rem;
+    }
+}

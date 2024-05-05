@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
+    <title>:: Desafio 9 ♥::</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_icon">
+            <img src="assets/img/paleta.png" alt="Icone de paleta">
+            <p>Art</p>
+        </div>
+
+        <span id="hamburguer" class="material-symbols-outlined">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li>
+                    <a href="#">Início</a>
+                </li>
+                <li>
+                    <a href="#">Loja</a>
+                </li>
+                <li>
+                    <a href="#">Aulas</a>
+                </li>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="backgound_img">
+            <div class="galery_button">
+                <a href="assets/galery.html" target="_blank">Galeria</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div class="log_footer">
+            <div>
+                <a href="#">
+                    <img src="assets/img/whatsapp (1).png" alt="Ícone de rede social whatsapp" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="assets/img/instagram.png" alt="Ícone de rede social instagram" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="assets/img/facebook.png" alt="Ícone de rede social facebook class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/rebeca-ferreira-932439275/" target="_blank">
+                    <img src="assets/img/linkedin.png" alt="Ícone de rede social linkedin class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/RebecaFer23" target="_blank">
+                    <img src="assets/img/github.png" alt="Ícone de rede social github" class="tamanho">
+                </a>
+            </div>
+        </div>
+        <p class="text_footer">
+            ♥ Prof Gil | Elas na tech 2023 ♥
+        </p>
+
+    </footer>
+    <script>
+        var hamburger = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+        hamburger.addEventListener("click", show, clicar)
+        itens_menu.addEventListener('mouseout', sair)
+        function show() {
+            if (itens_menu.style.display == 'block') {
+                itens_menu.classList.remove('show');
+            } else {
+                itens_menu.classList.toggle('show');
+            }
+        }
+        function clicar() {
+            itens_menu.style.classList.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
